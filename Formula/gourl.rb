@@ -11,13 +11,13 @@ class Gourl < Formula
       url "https://github.com/Nakurai/gourl/releases/download/v#{version}/#{version}-gourl-macos-amd64.zip"
       sha256 "8e1a0468ecdfbcb71d4e5c37f823c05c4dc6896a4d9434b53e05ac4cb80dc6e1"
       def install
-        bin.install "#{version}-gourl-macos-amd64.zip" => "gourl"
+        bin.install "#{version}-gourl-macos-amd64.app" => "gourl"
       end
     elsif Hardware::CPU.arm?
       url "https://github.com/Nakurai/gourl/releases/download/v#{version}/#{version}-gourl-macos-arm64.zip"
       sha256 "7260f5e874dbec15b59ec467bddcd67f6cf6e15dcaad79c258bd6d13080f9b1c"
       def install
-        bin.install "#{version}-gourl-macos-arm64.zip" => "gourl"
+        bin.install "#{version}-gourl-macos-arm64.app" => "gourl"
       end
     end
   end
