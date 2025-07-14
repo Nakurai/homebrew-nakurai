@@ -4,6 +4,7 @@ class Gourl < Formula
   desc "A use friendly mix between cURL and tools like Postman, Insomnia, etc."
   homepage "https://github.com/nakurai/gourl"
   version "1.0.1-alpha"
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
